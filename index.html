@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preethi S | My Portfolio</title>
+    <link rel="icon" href="porticon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-4xl font-bold tracking-wide uppercase text-blue-900">Preethi S</div>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#hero" class="hover:text-blue-600 transition">Home</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Me</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-lg">
+            <a href="#hero" class="block text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#projects" class="block text-gray-600 hover:text-blue-600">Projects</a>
+            <a href="#about" class="block text-gray-600 hover:text-blue-600">About</a>
+            <a href="#contact" class="block font-bold text-blue-600">Contact Me</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 text-center md:text-left order-2 md:order-1">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Full-Stack<br>
+                Developer.<br>
+                <span class="text-blue-600">Creator.</span>
+            </h1>
+            <p class="text-gray-600 leading-relaxed mb-8 text-base md:text-lg max-w-lg mx-auto md:mx-0">
+                Hi, I'm Preethi S. I build secure, scalable applications by combining strong full-stack skills with modern web technologies like React, Node.js, and Python.
+            </p>
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center order-1 md:order-2">
+            <div class="relative w-64 h-64 md:w-96 md:h-96">
+                <img src="profile.jpg" 
+                     alt="Preethi S" 
+                     class="rounded-full w-full h-full object-cover shadow-2xl border-8 border-white">
+                <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-100 rounded-full -z-10"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="bg-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
+                <p class="text-gray-500 max-w-2xl">Projects that define my approach to digital product design and cybersecurity.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-100 rounded-2xl overflow-hidden mb-6 shadow-sm aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Finance App">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition">Personal Finance Manager</h3>
+                    <p class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-3">MERN Stack</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        A secure financial tracking application featuring real-time charts, authentication, and database interactions.
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-100 rounded-2xl overflow-hidden mb-6 shadow-sm aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Steganography">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition">Data Hiding via Steganography</h3>
+                    <p class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-3">Python & Security</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cybersecurity tool using Python to hide confidential data within images, prioritizing privacy and encryption.
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-100 rounded-2xl overflow-hidden mb-6 shadow-sm aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="SMS">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition">Student Management System</h3>
+                    <p class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-3">Python Tkinter</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        GUI application for managing student records with full CRUD operations, SQLite integration, and reporting.
+                    </p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-100 rounded-2xl overflow-hidden mb-6 shadow-sm aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Todo App">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition">To-Do List Web App</h3>
+                    <p class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-3">JavaScript & LocalStorage</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Minimalist task manager featuring DOM manipulation and local storage for persistent data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-50 py-16 md:py-24 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-16">
+            <div class="md:w-3/5">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
+                <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+                    <p>
+                        I am a final year Computer Science student at Government College of Engineering, Theni. My journey combines a strong academic record with a relentless passion for solving real-world problems through code.
+                    </p>
+                    <p>
+                        I have honed my skills through internships at <span class="font-bold text-gray-900">Femtosoft Technologies</span> and <span class="font-bold text-gray-900">Edunet Foundation</span>, where I learned that great software isn't just about code—it's about the user experience.
+                    </p>
+                    <p>
+                        I am proficient in Tamil, English, and entry-level German. Currently, I am looking for opportunities to work abroad or in challenging environments where I can apply my Full-Stack and Cybersecurity knowledge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="md:w-2/5">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 h-full">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span>🛠️</span> Technical Arsenal
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Pandas/NumPy</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-6 flex items-center gap-2">
+                        <span>📜</span> Certifications
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span> Distributed Systems (NPTEL)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span> Data Science for Engineers (NPTEL)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's create something together.</h2>
+            <p class="text-gray-500 mb-12">Based in Tamilnadu. Open to global opportunities.</p>
+
+            <form action="https://formspree.io/f/mkgdvygk" method="POST" class="max-w-xl mx-auto space-y-4 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full p-4 bg-gray-50 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Email</label>
+                        <input type="email" name="email" required class="w-full p-4 bg-gray-50 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Message</label>
+                    <textarea name="message" rows="5" required class="w-full p-4 bg-gray-50 rounded-lg border focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="mt-16 text-sm text-gray-400">
+                &copy; 2025 Preethi S.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
