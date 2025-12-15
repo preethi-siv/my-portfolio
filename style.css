@@ -12,6 +12,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     font-size: 0.875rem;
+    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -27,7 +28,7 @@ body {
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .social-icon img {
